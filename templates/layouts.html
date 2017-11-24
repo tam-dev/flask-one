@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Learning Flask</title>
+  <link rel="stylesheet" href="http://localhost:8888/public/web-assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static' ,filename='css/main.css')}}">
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <header>
+      <h1 class="title">Learning Flask</h1>
+    </header>
+
+  {% block content %}
+  {% endblock %}
+
+
+  </div>
+  <!-- /.row -->
+</div>
+<!-- /.container -->
+
+
+
+ <script src="http://localhost:8888/public/web-assets/jquery/jquery-2.1.4.min.js"></script> 
+ <script src="http://localhost:8888/public/web-assets/bootstrap/js/bootstrap.min.js"></script> 
+</body>
+</html>    
