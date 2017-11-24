@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Learning Flask</title>
-  <link rel="stylesheet" href="http://localhost:8888/public/web-assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static' ,filename='css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="{{ url_for('static' ,filename='css/main.css')}}">
 </head>
 <body>
@@ -24,7 +24,7 @@
 
 
 
- <script src="http://localhost:8888/public/web-assets/jquery/jquery-2.1.4.min.js"></script> 
- <script src="http://localhost:8888/public/web-assets/bootstrap/js/bootstrap.min.js"></script> 
+ <script src="{{ url_for('static' ,filename='js/jquery.min.js')}}"></script> 
+ <script src="{{ url_for('static' ,filename='js/bootstrap.min.js')}}"></script> 
 </body>
 </html>    
